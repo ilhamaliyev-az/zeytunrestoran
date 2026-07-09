@@ -1,0 +1,450 @@
+/* ============================================
+   ZEYTUN RESTORAN — Mobile-First PWA Styles
+   Colors: Pastel Green #d4edba | Olive #4a7c59
+   ============================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  --clr-light: #d4edba;
+  --clr-light2: #e8f5d6;
+  --clr-light3: #f4faf0;
+  --clr-olive: #345F31;
+  --clr-olive-dark: #274825;
+  --clr-olive-mid: #4B7A48;
+  --clr-olive-pale: #7FA77C;
+  --clr-text: #1e3a2a;
+  --clr-text-light: #3d5a46;
+  --clr-white: #ffffff;
+  --clr-price: #2d6a40;
+  --radius: 14px;
+  --radius-sm: 8px;
+  --shadow: 0 2px 12px rgba(52,95,49,0.12);
+  --shadow-hover: 0 4px 20px rgba(52,95,49,0.22);
+  --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--clr-light3);
+  color: var(--clr-text);
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+/* ============ HEADER ============ */
+.header {
+  background: linear-gradient(135deg, var(--clr-olive) 0%, var(--clr-olive-dark) 100%);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 16px rgba(58,99,70,0.3);
+}
+
+.header-inner {
+  padding: 14px 16px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  font-size: 2.2rem;
+  line-height: 1;
+  filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+}
+
+.logo-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--clr-white);
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+.logo-sub {
+  font-size: 0.75rem;
+  color: var(--clr-light);
+  letter-spacing: 0.3px;
+  margin-top: 1px;
+  opacity: 0.9;
+}
+
+/* ============ CATEGORY NAV ============ */
+.cat-nav {
+  background: var(--clr-white);
+  display: flex;
+  gap: 8px;
+  padding: 10px 12px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  border-bottom: 2px solid var(--clr-light);
+  position: sticky;
+  top: 70px;
+  z-index: 90;
+}
+
+.cat-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.cat-btn {
+  flex-shrink: 0;
+  background: var(--clr-light3);
+  border: 1.5px solid var(--clr-light);
+  border-radius: 20px;
+  padding: 7px 14px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--clr-text-light);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.cat-btn:active {
+  transform: scale(0.96);
+}
+
+.cat-btn.active {
+  background: var(--clr-olive);
+  border-color: var(--clr-olive);
+  color: var(--clr-white);
+  box-shadow: 0 2px 8px rgba(74,124,89,0.35);
+}
+
+/* ============ MAIN ============ */
+.main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 16px 12px 80px;
+}
+
+/* ============ SECTION ============ */
+.section {
+  margin-bottom: 12px;
+}
+
+.section.hidden {
+  display: none;
+}
+
+.section-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--clr-olive-dark);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--clr-light);
+}
+
+.section-icon {
+  font-size: 1.3rem;
+}
+
+.subsection-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--clr-olive-mid);
+  margin: 16px 0 10px;
+  padding-left: 4px;
+}
+
+/* ============ SET CARDS GRID ============ */
+.sets-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 380px) {
+  .sets-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.set-card {
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1.5px solid var(--clr-light);
+  transition: box-shadow 0.2s ease;
+}
+
+.set-card:active {
+  box-shadow: var(--shadow-hover);
+}
+
+.set-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  color: var(--clr-white);
+}
+
+.set-14 { background: linear-gradient(120deg, #5d9470, #4a7c59); }
+.set-30 { background: linear-gradient(120deg, #4a7c59, #3a6346); }
+.set-45 { background: linear-gradient(120deg, #3a6346, #2d5238); }
+.set-70 { background: linear-gradient(120deg, #2d5238, #1e3a2a); }
+
+.set-badge {
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.set-price {
+  font-size: 1.05rem;
+  font-weight: 800;
+  background: rgba(255,255,255,0.25);
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.set-persons {
+  font-size: 0.72rem;
+  color: var(--clr-olive-mid);
+  font-weight: 600;
+  padding: 6px 14px 4px;
+  background: var(--clr-light2);
+}
+
+.set-items {
+  list-style: none;
+  padding: 8px 14px 12px;
+}
+
+.set-items li {
+  font-size: 0.78rem;
+  color: var(--clr-text);
+  padding: 3px 0;
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  line-height: 1.4;
+}
+
+.set-items li em {
+  font-style: normal;
+  font-size: 0.7rem;
+  color: var(--clr-olive-mid);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.item-dot {
+  color: var(--clr-olive-pale);
+  font-size: 0.7rem;
+  flex-shrink: 0;
+}
+
+/* ===== TEA SET CARDS ===== */
+.tea-set .set-header {
+  color: var(--clr-white);
+}
+
+.tea-h1 { background: linear-gradient(120deg, #8ab89a, #6da07d); }
+.tea-h2 { background: linear-gradient(120deg, #6da07d, #5d9470); }
+.tea-h3 { background: linear-gradient(120deg, #5d9470, #4a7c59); }
+.tea-h4 { background: linear-gradient(120deg, #4a7c59, #3a6346); }
+.tea-h5 { background: linear-gradient(120deg, #3a6346, #2f5540); }
+.tea-h6 { background: linear-gradient(120deg, #2f5540, #265035); }
+.tea-h7 { background: linear-gradient(120deg, #265035, #1e3a2a); }
+.tea-h8 { background: linear-gradient(120deg, #1e3a2a, #162b1e); }
+
+/* ============ MENU LIST ============ */
+.menu-list {
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1.5px solid var(--clr-light);
+  overflow: hidden;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--clr-light2);
+  gap: 10px;
+  transition: background 0.15s ease;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item:active {
+  background: var(--clr-light2);
+}
+
+.item-name {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--clr-text);
+  flex: 1;
+  line-height: 1.4;
+}
+
+.item-name small {
+  font-size: 0.75rem;
+  color: var(--clr-text-light);
+  font-weight: 400;
+}
+
+.item-price {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--clr-price);
+  white-space: nowrap;
+  background: var(--clr-light2);
+  padding: 3px 9px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* ============ FOOTER ============ */
+.footer {
+  background: var(--clr-olive-dark);
+  color: var(--clr-light);
+  text-align: center;
+  padding: 18px 16px;
+  font-size: 0.88rem;
+  margin-top: 20px;
+}
+
+.footer-sub {
+  font-size: 0.75rem;
+  opacity: 0.75;
+  margin-top: 4px;
+}
+
+/* ============ SCROLL-TO-TOP ============ */
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--clr-olive);
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(74,124,89,0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  transition: background 0.2s;
+}
+
+.scroll-top.show {
+  display: flex;
+}
+
+.scroll-top:active {
+  background: var(--clr-olive-dark);
+  transform: scale(0.94);
+}
+
+/* ============ OFFLINE BANNER ============ */
+.offline-banner {
+  display: none;
+  background: #e67e22;
+  color: #fff;
+  text-align: center;
+  padding: 8px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.offline-banner.show {
+  display: block;
+}
+
+/* ============ INSTALL PROMPT ============ */
+.install-banner {
+  display: none;
+  background: var(--clr-light2);
+  border-bottom: 2px solid var(--clr-light);
+  padding: 10px 16px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.install-banner.show {
+  display: flex;
+}
+
+.install-banner p {
+  font-size: 0.8rem;
+  color: var(--clr-text);
+  font-weight: 500;
+}
+
+.install-btn {
+  background: var(--clr-olive);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.install-dismiss {
+  background: none;
+  border: none;
+  color: var(--clr-text-light);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+
+/* ============ ANIMATIONS ============ */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.section:not(.hidden) {
+  animation: fadeIn 0.25s ease;
+}
+
+/* ============ SAFE AREAS (iPhone notch) ============ */
+@supports (padding: max(0px)) {
+  .header { padding-top: max(0px, env(safe-area-inset-top)); }
+  .main   { padding-bottom: max(80px, calc(env(safe-area-inset-bottom) + 80px)); }
+}

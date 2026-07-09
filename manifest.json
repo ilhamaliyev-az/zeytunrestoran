@@ -1,0 +1,27 @@
+{
+  "name": "Zeytun Restoran Menyu",
+  "short_name": "Zeytun",
+  "description": "Zeytun Restoran & Qəlyan — Onlayn Menyu",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#4a7c59",
+  "background_color": "#f4faf0",
+  "lang": "az",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "lifestyle"],
+  "screenshots": []
+}

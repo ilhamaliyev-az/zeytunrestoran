@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#4a7c59" />
+  <meta name="description" content="Zeytun Restoran - Onlayn Menyu" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Zeytun" />
+  <title>Zeytun Restoran</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <span class="logo-icon">🫒</span>
+        <div>
+          <h1 class="logo-title">Zeytun</h1>
+          <p class="logo-sub">Restoran</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CATEGORY NAV -->
+  <nav class="cat-nav" id="catNav">
+    <button class="cat-btn active" data-target="sets-bbq">🍢 Kabab Setlər</button>
+    <button class="cat-btn" data-target="sets-tea">🍵 Çay Setlər</button>
+    <button class="cat-btn" data-target="kabablar">🔥 Kabablar</button>
+    <button class="cat-btn" data-target="qazan">🍲 Qazan</button>
+    <button class="cat-btn" data-target="sorbalar">🥣 Şorbalar</button>
+    <button class="cat-btn" data-target="tava">🍳 Tava</button>
+    <button class="cat-btn" data-target="sac">🫕 Sac</button>
+    <button class="cat-btn" data-target="seher">🌅 Səhər</button>
+    <button class="cat-btn" data-target="fastfood">🍔 Fast Food</button>
+    <button class="cat-btn" data-target="soyuq-qelyan">🥗 Soyuq Q/Altılar</button>
+    <button class="cat-btn" data-target="ickilər">🥤 İçkilər</button>
+    <button class="cat-btn" data-target="cerəzlər">🥜 Çərəzlər</button>
+    <button class="cat-btn" data-target="qelyanlar">💨 Qəlyanlar</button>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <!-- ===== KABAB SETLƏR ===== -->
+    <section class="section" id="sets-bbq">
+      <h2 class="section-title"><span class="section-icon">🍢</span> Kabab Setlər</h2>
+
+      <div class="sets-grid">
+        <!-- SET 14 -->
+        <article class="set-card">
+          <div class="set-header set-14">
+            <span class="set-badge">SET 14</span>
+            <span class="set-price">14 AZN</span>
+          </div>
+          <p class="set-persons">👥 2 nəfərlik</p>
+          <ul class="set-items">
+            <li><span class="item-dot">•</span> Lülə kabab <em>1 şiş</em></li>
+            <li><span class="item-dot">•</span> Toyuq kababı <em>1 şiş</em></li>
+            <li><span class="item-dot">•</span> Kartof lüləsi <em>1 şiş</em></li>
+            <li><span class="item-dot">•</span> Pepsi <em>1L</em></li>
+            <li><span class="item-dot">•</span> Aciko</li>
+            <li><span class="item-dot">•</span> Süzmə</li>
+            <li><span class="item-dot">•</span> Tərəvəz salatı</li>
+            <li><span class="item-dot">•</span> Çörək <em>1 pors</em></li>
+          </ul>
+        </article>
+
+        <!-- SET 30 -->
+        <article class="set-card">
+          <div class="set-header set-30">
+            <span class="set-badge">SET 30</span>
+            <span class="set-price">30 AZN</span>
+          </div>
+          <p class="set-persons">👥 3 nəfərlik</p>
+          <ul class="set-items">
+            <li><span class="item-dot">•</span> Tikə kabab <em>1 şiş</em></li>
+            <li><span class="item-dot">•</span> Lülə kabab <em>2 şiş</em></li>
+            <li><span class="item-dot">•</span> Toyuq kababı <em>2 şiş</em></li>
+            <li><span class="item-dot">•</span> Kartof lüləsi <em>2 şiş</em></li>
+            <li><span class="item-dot">•</span> Aciko</li>
+            <li><span class="item-dot">•</span> Süzmə</li>
+            <li><span class="item-dot">•</span> Paytaxt salatı</li>
+            <li><span class="item-dot">•</span> Tərəvəz salatı</li>
+            <li><span class="item-dot">•</span> Çörək <em>1 pors</em></li>
+            <li><span class="item-dot">•</span> Pepsi <em>1 lt</em></li>
+            <li><span class="item-dot">•</span> Qəlyan <em>1 ədəd</em></li>
+            <li><span class="item-dot">•</span> Çay <em>1 çaynik</em></li>
+          </ul>
+        </article>
+
+        <!-- SET 45 -->
+        <article class="set-card">
+          <div class="set-header set-45">
+            <span class="set-badge">SET 45</span>
+            <span class="set-price">45 AZN</span>
+          </div>
+          <p class="set-persons">👥 4 nəfərlik</p>
+          <ul class="set-items">
+            <li><span class="item-dot">•</span> Tikə kabab <em>2 şiş</em></li>
+            <li><span class="item-dot">•</span> Lülə kabab <em>2 şiş</em></li>
+            <li><span class="item-dot">•</span> Toyuq kababı <em>2 şiş</em></li>
+            <li><span class="item-dot">•</span> Kartof lüləsi <em>2 şiş</em></li>
+            <li><span class="item-dot">•</span> Aciko</li>
+            <li><span class="item-dot">•</span> Süzmə</li>
+            <li><span class="item-dot">•</span> Tərəvəz salatı</li>
+            <li><span class="item-dot">•</span> Paytaxt salatı</li>
+            <li><span class="item-dot">•</span> Pendir assorti</li>
+            <li><span class="item-dot">•</span> Çörək <em>1 pors</em></li>
+            <li><span class="item-dot">•</span> Pepsi <em>2 lt</em></li>
+            <li><span class="item-dot">•</span> Qəlyan <em>1 ədəd</em></li>
+            <li><span class="item-dot">•</span> Çay <em>1 çaynik</em></li>
+            <li><span class="item-dot">•</span> Fıstıq</li>
+            <li><span class="item-dot">•</span> Qara kişmiş</li>
+          </ul>
+        </article>
+
+        <!-- SET 70 -->
+        <article class="set-card">
+          <div class="set-header set-70">
+            <span class="set-badge">SET 70</span>
+            <span class="set-price">70 AZN</span>
+          </div>
+          <p class="set-persons">👥 5 nəfərlik</p>
+          <ul class="set-items">
+            <li><span class="item-dot">•</span> Tikə kabab <em>3 şiş</em></li>
+            <li><span class="item-dot">•</span> Lülə kabab <em>3 şiş</em></li>
+            <li><span class="item-dot">•</span> Toyuq kababı <em>3 şiş</em></li>
+            <li><span class="item-dot">•</span> Kartof lüləsi <em>3 şiş</em></li>
+            <li><span class="item-dot">•</span> Kartof çipsi <em>1 şiş</em></li>
+            <li><span class="item-dot">•</span> Aciko</li>
+            <li><span class="item-dot">•</span> Süzmə</li>
+            <li><span class="item-dot">•</span> Paytaxt salatı</li>
+            <li><span class="item-dot">•</span> Tərəvəz salatı</li>
+            <li><span class="item-dot">•</span> Pendir assorti</li>
+            <li><span class="item-dot">•</span> Blincik <em>5 ədəd</em></li>
+            <li><span class="item-dot">•</span> Kələm salatı</li>
+            <li><span class="item-dot">•</span> Çörək <em>2 ədəd</em></li>
+            <li><span class="item-dot">•</span> Pepsi <em>1 lt</em></li>
+            <li><span class="item-dot">•</span> Qəlyan <em>2 ədəd</em></li>
+            <li><span class="item-dot">•</span> Çay <em>2 çaynik</em></li>
+            <li><span class="item-dot">•</span> Mürəbbə</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== ÇAY & QƏLYAN SETLƏR ===== -->
+    <section class="section hidden" id="sets-tea">
+      <h2 class="section-title"><span class="section-icon">🍵</span> Çay &amp; Qəlyan Setlər</h2>
+      <div class="sets-grid">
+
+        <!-- SET 1 -->
+        <article class="set-card tea-set">
+          <div class="set-header tea-h1">
+            <span class="set-badge">SET 1</span>
+            <span class="set-price">6 AZN</span>
+          </div>
+          <ul class="set-items">
+            <li><span class="item-dot">•</span> Çay (1)</li>
+            <li><span class="item-dot">•</span> Mürəbbə</li>
+            <li><span class="item-dot">•</span> Limon</li>
+            <li><span class="item-dot">•</span> Qara tum</li>
+          </ul>
+        </article>
+
+        <!-- SET 2 -->
+        <article class="set-card tea-set">
+          <div class="set-header tea-h2">
+            <span class="set-badge">SET 2</span>
+            <span class="set-price">11 AZN</span>
+          </div>
+          <ul class="set-items">
+            <li><span class="item-dot">•</span> Çay (1)</li>
+            <li><span class="item-dot">•</span> Limon</li>
+            <li><span class="item-dot">•</span> Qara tum</li>
+            <li><span class="item-dot">•</span> Rulet</li>
+            <li><span class="item-dot">•</span> Qəlyan</li>
+          </ul>
+        </article>
+
+        <!-- SET 3 -->
+        <article class="set-card tea-set">
+          <div class="set-header tea-h3">
+            <span class="set-badge">SET 3</span>
+            <span class="set-price">16 AZN</span>
+          </div>
+          <ul class="set-items">
+            <li><span class="item-dot">•</span> Çay (2)</li>
+            <li><span class="item-dot">•</span> Limon</li>
+            <li><span class="item-dot">•</span> Fıstıq</li>
+            <li><span class="item-dot">•</span> Qara kişmiş</li>
+            <li><span class="item-dot">•</span> Qara tum</li>
+            <li><span class="item-dot">•</span> Mürəbbə</li>
+            <li><span class="item-dot">•</span> Qəlyan</li>
+          </ul>
+        </article>
+
+        <!-- SET 4 -->
+        <article class="set-card tea-set">
+          <div class="set-header tea-h4">
+            <span class="set-badge">SET 4</span>
+            <span class="set-price">22 AZN</span>
+          </div>
+          <ul class="set-items">
+            <li><span class="item-dot">•</span> Çay limitsiz</li>
+            <li><span class="item-dot">•</span> Limon</li>
+            <li><span class="item-dot">•</span> Şokolad</li>
+            <li><span class="item-dot">•</span> Qəlyan (2 ədəd) südlü</li>
+          </ul>
+        </article>
+
+        <!-- SET 5 -->
+        <article class="set-card tea-set">
+          <div class="set-header tea-h5">
+            <span class="set-badge">SET 5</span>
+            <span class="set-price">24 AZN</span>
+          </div>
+          <ul class="set-items">
+            <li><span class="item-dot">•</span> Çay (3)</li>
+            <li><span class="item-dot">•</span> Limon</li>
+            <li><span class="item-dot">•</span> Mürəbbə</li>
+            <li><span class="item-dot">•</span> Fıstıq</li>
+            <li><span class="item-dot">•</span> Fındıq</li>
+            <li><span class="item-dot">•</span> Qara kişmiş</li>
+            <li><span class="item-dot">•</span> Rulet</li>
+            <li><span class="item-dot">•</span> Şokolad</li>
+            <li><span class="item-dot">•</span> Qəlyan (1) Qreyfrut</li>
+          </ul>
+        </article>
+
+        <!-- SET 6 -->
+        <article class="set-card tea-set">
+          <div class="set-header tea-h6">
+            <span class="set-badge">SET 6</span>
+            <span class="set-price">35 AZN</span>
+          </div>
+          <ul class="set-items">
+            <li><span class="item-dot">•</span> Çay (5)</li>
+            <li><span class="item-dot">•</span> Limon</li>
+            <li><span class="item-dot">•</span> Mürəbbə</li>
+            <li><span class="item-dot">•</span> Rulet</li>
+            <li><span class="item-dot">•</span> Meyvə</li>
+            <li><span class="item-dot">•</span> Qara tum</li>
+            <li><span class="item-dot">•</span> Ağ tum</li>
+            <li><span class="item-dot">•</span> Şokolad</li>
+            <li><span class="item-dot">•</span> Qəlyan (1) Qreyfrut</li>
+          </ul>
+        </article>
+
+        <!-- SET 7 -->
+        <article class="set-card tea-set">
+          <div class="set-header tea-h7">
+            <span class="set-badge">SET 7</span>
+            <span class="set-price">35 AZN</span>
+          </div>
+          <ul class="set-items">
+            <li><span class="item-dot">•</span> Çay limitsiz</li>
+            <li><span class="item-dot">•</span> Limon</li>
+            <li><span class="item-dot">•</span> Şokolad</li>
+            <li><span class="item-dot">•</span> Mürəbbə</li>
+            <li><span class="item-dot">•</span> Rulet</li>
+            <li><span class="item-dot">•</span> Fındıq</li>
+            <li><span class="item-dot">•</span> Fıstıq</li>
+            <li><span class="item-dot">•</span> Qara kişmiş</li>
+            <li><span class="item-dot">•</span> Pepsi 2L</li>
+            <li><span class="item-dot">•</span> Meyvə</li>
+            <li><span class="item-dot">•</span> Qəlyan (1) Qreyfrut</li>
+          </ul>
+        </article>
+
+        <!-- SET 8 -->
+        <article class="set-card tea-set">
+          <div class="set-header tea-h8">
+            <span class="set-badge">SET 8</span>
+            <span class="set-price">40 AZN</span>
+          </div>
+          <ul class="set-items">
+            <li><span class="item-dot">•</span> Çay limitsiz</li>
+            <li><span class="item-dot">•</span> Limon</li>
+            <li><span class="item-dot">•</span> Mürəbbə</li>
+            <li><span class="item-dot">•</span> Rulet</li>
+            <li><span class="item-dot">•</span> Meyvə</li>
+            <li><span class="item-dot">•</span> Fıstıq</li>
+            <li><span class="item-dot">•</span> Fındıq</li>
+            <li><span class="item-dot">•</span> Qara kişmiş</li>
+            <li><span class="item-dot">•</span> Şokolad</li>
+            <li><span class="item-dot">•</span> Qara tum</li>
+            <li><span class="item-dot">•</span> Qəlyan (2) Südlü</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== KABABLAR ===== -->
+    <section class="section hidden" id="kabablar">
+      <h2 class="section-title"><span class="section-icon">🔥</span> Kabablar</h2>
+      <div class="menu-list">
+        <div class="menu-item"><span class="item-name">Basdırma kabab</span><span class="item-price">7 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Lülə kabab</span><span class="item-price">5.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Tikə kabab</span><span class="item-price">7 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Döymə kabab</span><span class="item-price">6 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Toyuq kabab</span><span class="item-price">4.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Ciyər kabab</span><span class="item-price">5 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Kartof lülə</span><span class="item-price">2 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Kartof çipsi</span><span class="item-price">2 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Antirikot kababı</span><span class="item-price">8 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Tərəvəz kababı</span><span class="item-price">1.50 / 3 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Şapalaq kababı</span><span class="item-price">10 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Xan kababı</span><span class="item-price">7 AZN</span></div>
+      </div>
+    </section>
+
+    <!-- ===== QAZAN YEMƏKLƏRİ ===== -->
+    <section class="section hidden" id="qazan">
+      <h2 class="section-title"><span class="section-icon">🍲</span> Qazan Yeməkləri</h2>
+      <div class="menu-list">
+        <div class="menu-item"><span class="item-name">Cücə plov (Ləvəngi)</span><span class="item-price">4.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Şüyüd plov</span><span class="item-price">2 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Boranı plov <small>(sifarişlə)</small></span><span class="item-price">2 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Özbək plov</span><span class="item-price">4.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Lərgə plov <small>(sifarişlə)</small></span><span class="item-price">2 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Paxla plov <small>(sifarişlə)</small></span><span class="item-price">2 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Şah plov <small>(sifarişlə)</small></span><span class="item-price">10 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Kartof plov <small>(sifarişlə)</small></span><span class="item-price">2 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Qreçka</span><span class="item-price">2 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Spagetti</span><span class="item-price">2 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Püre</span><span class="item-price">1.80 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Turşu kabab</span><span class="item-price">2.70 / 4.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Şirin-qovurma</span><span class="item-price">2.70 / 4.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Qulyaş</span><span class="item-price">2.50 / 4.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Kotlet <small>(mal əti ilə)</small></span><span class="item-price">1.20 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Kotlet <small>(toyuq əti ilə)</small></span><span class="item-price">1.10 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Toyuq çığırtması</span><span class="item-price">2.50 / 4.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Yarpaq dolması</span><span class="item-price">2.50 / 5 AZN</span></div>
+        <div class="menu-item"><span class="item-name">3 Bacı dolması</span><span class="item-price">5 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Çolpa ləvəngi</span><span class="item-price">15 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Çolpa soyutma</span><span class="item-price">15 AZN</span></div>
+      </div>
+    </section>
+
+    <!-- ===== ŞORBALAR ===== -->
+    <section class="section hidden" id="sorbalar">
+      <h2 class="section-title"><span class="section-icon">🥣</span> Şorbalar</h2>
+      <div class="menu-list">
+        <div class="menu-item"><span class="item-name">Mərci</span><span class="item-price">2.20 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Dovğa</span><span class="item-price">2.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Borş</span><span class="item-price">2.80 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Toyuq supu</span><span class="item-price">2.60 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Tərəvəz supu</span><span class="item-price">2.60 AZN</span></div>
+      </div>
+    </section>
+
+    <!-- ===== TAVA YEMƏKLƏRİ ===== -->
+    <section class="section hidden" id="tava">
+      <h2 class="section-title"><span class="section-icon">🍳</span> Tava Yeməkləri</h2>
+      <div class="menu-list">
+        <div class="menu-item"><span class="item-name">Can əti Qaymaqda <small>(2p)</small></span><span class="item-price">19 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Can əti qovurma <small>(2p)</small></span><span class="item-price">17 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Quzu qovurma <small>(2p)</small></span><span class="item-price">17 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Çolpa qovurma</span><span class="item-price">16 AZN</span></div>
+        <div class="menu-item"><span class="item-name">İmisli qovurması</span><span class="item-price">5 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Cızbız</span><span class="item-price">4.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Kütüm</span><span class="item-price">Soruşun</span></div>
+        <div class="menu-item"><span class="item-name">Ağsol-Qarasol</span><span class="item-price">Soruşun</span></div>
+        <div class="menu-item"><span class="item-name">Sazan</span><span class="item-price">Soruşun</span></div>
+        <div class="menu-item"><span class="item-name">Farel</span><span class="item-price">Soruşun</span></div>
+        <div class="menu-item"><span class="item-name">Balıq sırdağı</span><span class="item-price">Soruşun</span></div>
+      </div>
+    </section>
+
+    <!-- ===== SAC YEMƏKLƏRİ ===== -->
+    <section class="section hidden" id="sac">
+      <h2 class="section-title"><span class="section-icon">🫕</span> Sac Yeməkləri</h2>
+      <div class="menu-list">
+        <div class="menu-item"><span class="item-name">Quzu sacı <small>(2p)</small></span><span class="item-price">19 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Toyuq sacı <small>(2p)</small></span><span class="item-price">13 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Çolpa sacı</span><span class="item-price">18 AZN</span></div>
+        <div class="menu-item"><span class="item-name">İçalat sacı</span><span class="item-price">14 AZN</span></div>
+      </div>
+    </section>
+
+    <!-- ===== SƏHƏR YEMƏKLƏRİ ===== -->
+    <section class="section hidden" id="seher">
+      <h2 class="section-title"><span class="section-icon">🌅</span> Səhər Yeməkləri</h2>
+      <div class="menu-list">
+        <div class="menu-item"><span class="item-name">Yumurta qlazok</span><span class="item-price">2.20 / 3.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Yumurta pomidor</span><span class="item-price">2.20 / 3.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Yumurta pomidor sosiska 3in1</span><span class="item-price">2.50 / 3.80 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Yumurta pomidor holland pendiri kolbasa 4in1</span><span class="item-price">4.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Tava kababı (yumurta kotlet)</span><span class="item-price">4.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Yumurta (sosiska kolbasa)</span><span class="item-price">2.50 / 3.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Yumurta qaynadılmış</span><span class="item-price">0.90 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Sosiska (1 ədəd)</span><span class="item-price">1 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Yağ-Pendir-Çay-Çörək</span><span class="item-price">3 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Bal</span><span class="item-price">2 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Qaymaq</span><span class="item-price">2 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Bal (yağ və ya qaymaq)</span><span class="item-price">3 AZN</span></div>
+      </div>
+    </section>
+
+    <!-- ===== FAST FOOD ===== -->
+    <section class="section hidden" id="fastfood">
+      <h2 class="section-title"><span class="section-icon">🍔</span> Fast Food</h2>
+      <div class="menu-list">
+        <div class="menu-item"><span class="item-name">Kartof fri</span><span class="item-price">2.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Naggets</span><span class="item-price">5 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Burger ət</span><span class="item-price">6 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Burger toyuq</span><span class="item-price">5 AZN</span></div>
+      </div>
+    </section>
+
+    <!-- ===== SOYUQ QƏLYANALTILAR ===== -->
+    <section class="section hidden" id="soyuq-qelyan">
+      <h2 class="section-title"><span class="section-icon">🥗</span> Soyuq Qəlyanaltilar</h2>
+      <div class="menu-list">
+        <div class="menu-item"><span class="item-name">Pomidor və Xiyar</span><span class="item-price">1.20 / 3 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Pendir sadə</span><span class="item-price">1.80 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Pendir assorti</span><span class="item-price">3 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Toyuq salatı</span><span class="item-price">2.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Mimoza salatı (mövsümü)</span><span class="item-price">3 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Paytaxt salatı</span><span class="item-price">2 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Kələm salatı</span><span class="item-price">2 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Leço salatı</span><span class="item-price">2.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Blincik</span><span class="item-price">1 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Şoraba</span><span class="item-price">1 / 3 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Qatıqlı tərə</span><span class="item-price">2.20 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Badımcan pətəsi</span><span class="item-price">2.20 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Tərəvəz qarışığı</span><span class="item-price">1 / 3 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Göyərti qarışıq</span><span class="item-price">1 / 3 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Aciko</span><span class="item-price">1.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Süzmə</span><span class="item-price">1.50 AZN</span></div>
+      </div>
+    </section>
+
+    <!-- ===== İÇKİLƏR ===== -->
+    <section class="section hidden" id="ickilər">
+      <h2 class="section-title"><span class="section-icon">🥤</span> İçkilər</h2>
+
+      <h3 class="subsection-title">❄️ Soyuq İçkilər</h3>
+      <div class="menu-list">
+        <div class="menu-item"><span class="item-name">Pepsi-kola (1L)</span><span class="item-price">2.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Pepsi-kola (bakal)</span><span class="item-price">0.80 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Kompot</span><span class="item-price">2 – 3 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Meyvə şirəsi</span><span class="item-price">2.30 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Ayran (1L)</span><span class="item-price">2.20 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Ayran (bakal)</span><span class="item-price">2.20 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Sirab (qazlı)</span><span class="item-price">1.90 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Sirab (qazsız)</span><span class="item-price">1.90 AZN</span></div>
+      </div>
+
+      <h3 class="subsection-title">☕ İsti İçkilər</h3>
+      <div class="menu-list">
+        <div class="menu-item"><span class="item-name">Çay (çaynik)</span><span class="item-price">1.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Çay (1 stəkan taraş)</span><span class="item-price">0.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Kofe</span><span class="item-price">1 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Kappuçino</span><span class="item-price">1.50 – 3 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Latte</span><span class="item-price">1 – 3 AZN</span></div>
+        <div class="menu-item"><span class="item-name">İsti şokolad</span><span class="item-price">2 AZN</span></div>
+      </div>
+    </section>
+
+    <!-- ===== ÇƏRƏZLƏR ===== -->
+    <section class="section hidden" id="cerəzlər">
+      <h2 class="section-title"><span class="section-icon">🥜</span> Çərəzlər</h2>
+      <div class="menu-list">
+        <div class="menu-item"><span class="item-name">Fındıq</span><span class="item-price">2 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Fıstıq</span><span class="item-price">1.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Qara kişmiş</span><span class="item-price">2 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Qara tum</span><span class="item-price">1.20 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Ağ-qara tum</span><span class="item-price">1.50 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Qoz ləpəsi</span><span class="item-price">3.50 AZN</span></div>
+      </div>
+    </section>
+
+    <!-- ===== QƏLYANLAR ===== -->
+    <section class="section hidden" id="qelyanlar">
+      <h2 class="section-title"><span class="section-icon">💨</span> Qəlyanlar</h2>
+      <div class="menu-list">
+        <div class="menu-item"><span class="item-name">Qəlyan (çaşkada)</span><span class="item-price">9 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Qəlyan (almada)</span><span class="item-price">14 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Qəlyan (qreyfrutda)</span><span class="item-price">15 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Qəlyan (ananasda)</span><span class="item-price">18 AZN</span></div>
+        <div class="menu-item"><span class="item-name">Qəlyan (qarpızda)</span><span class="item-price">20 AZN</span></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>🫒 Zeytun Restoran</p>
+    <p class="footer-sub">Xoş gəlmisiniz!</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
