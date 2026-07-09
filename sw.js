@@ -3,7 +3,7 @@
    Cache-first strategy for full offline support
    ================================================ */
 
-var CACHE_NAME = 'zeytun-v3';
+var CACHE_NAME = 'zeytun-v5';
 var ASSETS = [
   './',
   './index.html',
