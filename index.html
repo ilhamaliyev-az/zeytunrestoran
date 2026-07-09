@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="theme-color" content="#4a7c59" />
+  <meta name="theme-color" content="#1a1a1a" />
   <meta name="description" content="Zeytun Restoran - Onlayn Menyu" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Zeytun" />
-  <title>Zeytun Restoran</title>
+  <title>Zeytun 50-Qəpik Restoran</title>
   <link rel="manifest" href="manifest.json" />
   <link rel="apple-touch-icon" href="icons/icon-192.png" />
   <link rel="stylesheet" href="style.css" />
@@ -22,7 +22,7 @@
         <span class="logo-icon">🫒</span>
         <div>
           <h1 class="logo-title">Zeytun</h1>
-          <p class="logo-sub">Restoran</p>
+          <p class="logo-sub">Zeytun Lounge · 50 Qəpik · Lənkəran</p>
         </div>
       </div>
     </div>
@@ -30,7 +30,8 @@
 
   <!-- CATEGORY NAV -->
   <nav class="cat-nav" id="catNav">
-    <button class="cat-btn active" data-target="sets-bbq">🍢 Kabab Setlər</button>
+    <button class="cat-btn active" data-target="haqqinda">Haqqımızda</button>
+    <button class="cat-btn" data-target="sets-bbq">🍢 Kabab Setlər</button>
     <button class="cat-btn" data-target="sets-tea">🍵 Çay Setlər</button>
     <button class="cat-btn" data-target="kabablar">🔥 Kabablar</button>
     <button class="cat-btn" data-target="qazan">🍲 Qazan</button>
@@ -48,8 +49,57 @@
   <!-- MAIN CONTENT -->
   <main class="main">
 
+    <!-- ===== HAQQINDA ===== -->
+    <section class="section" id="haqqinda">
+      <h2 class="section-title"><span class="section-icon"></span> Haqqımızda</h2>
+
+      <div class="about-card">
+        <div class="about-logo-wrap">
+          <img src="logo.jpg" alt="50 Qəpik Zeytun Lənkəran" class="about-logo" />
+        </div>
+
+        <div class="about-info-list">
+          <!-- 1. Məlumat -->
+          <div class="about-info-item">
+            <span class="about-info-icon">🫒</span>
+            <div class="about-info-text">
+              <span class="about-info-label">Məlumat</span>
+              <span class="about-info-value">Zeytun Lounge 50- Qəpik Lənkaran</span>
+            </div>
+          </div>
+
+          <!-- 2. Əlaqə nömrəsi -->
+          <div class="about-info-item">
+            <span class="about-info-icon">📞</span>
+            <div class="about-info-text">
+              <span class="about-info-label">Əlaqə nömrəsi</span>
+              <a href="https://wa.me/994502531989" class="about-info-link" target="_blank" rel="noopener">+994 50 253 19 89</a>
+            </div>
+          </div>
+
+          <!-- 3. Ünvan -->
+          <div class="about-info-item">
+            <span class="about-info-icon">📍</span>
+            <div class="about-info-text">
+              <span class="about-info-label">Ünvan</span>
+              <a href="https://maps.app.goo.gl/KxRhchVD7wBTEM1b9" class="about-info-link" target="_blank" rel="noopener">Xəritədə aç</a>
+            </div>
+          </div>
+
+          <!-- 4. Instagram -->
+          <div class="about-info-item">
+            <span class="about-info-icon">📸</span>
+            <div class="about-info-text">
+              <span class="about-info-label">Instagram</span>
+              <a href="https://www.instagram.com/50qepikzeytun_lenkeran?igsh=MTN1NTV5N291NGlucQ==" class="about-info-link" target="_blank" rel="noopener">@50qepikzeytun_lenkeran</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== KABAB SETLƏR ===== -->
-    <section class="section" id="sets-bbq">
+    <section class="section hidden" id="sets-bbq">
       <h2 class="section-title"><span class="section-icon">🍢</span> Kabab Setlər</h2>
 
       <div class="sets-grid">
@@ -496,7 +546,7 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>🫒 Zeytun Restoran</p>
+    <p>🫒 Zeytun Lounge · 50 Qəpik · Lənkəran</p>
     <p class="footer-sub">Xoş gəlmisiniz!</p>
   </footer>
 
